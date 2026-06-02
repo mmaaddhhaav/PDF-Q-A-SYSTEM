@@ -1,176 +1,54 @@
-📚 Chat with Multiple PDFs using Gemini AI
-🚀 Overview
+📚 Chat with Multiple PDFs using Gemini AI 🚀
+AI-powered Q&A system for multiple PDF documents. Upload files, process text, and ask questions in natural language. Uses RAG, FAISS, Hugging Face embeddings, and Google Gemini AI for context-aware answers.
 
-Chat with Multiple PDFs is an AI-powered document question-answering system that allows users to upload multiple PDF files and ask questions in natural language. The application processes the uploaded documents, creates semantic embeddings, and retrieves relevant information to generate accurate answers using Google's Gemini AI.
+✨ Features:
+1).📄 Upload multiple PDFs
+2).🔍 Automatic text extraction
+3).🧠 Semantic search with embeddings
+4).🤖 Gemini-powered answers
+5).⚡ Fast retrieval with FAISS
+6).🎨 Streamlit web interface
 
-The project combines Retrieval-Augmented Generation (RAG), Vector Databases, Embeddings, and Large Language Models to provide context-aware responses from PDF documents.
+🏗️ Architecture
+Code
+Upload PDFs → Extract Text → Chunk Text → Generate Embeddings → Store in FAISS → Ask Question → Retrieve Context → Gemini AI → Answer
+🛠️ Tech Stack
+Frontend: Streamlit
+Backend: Python
+AI/ML: Gemini AI, Hugging Face
+Database: FAISS
+Libraries: LangChain, PyPDF2, dotenv
 
-✨ Features
-📄 Upload multiple PDF documents simultaneously
-🔍 Extract and process PDF text automatically
-🧠 Semantic search using vector embeddings
-🤖 AI-powered question answering using Gemini
-💬 Interactive chatbot interface
-📚 Context-aware conversations
-⚡ Fast retrieval with FAISS vector database
-🎨 Modern Streamlit web interface
-🏗️ System Architecture
-User Uploads PDFs
-        │
-        ▼
-Text Extraction (PyPDF2)
-        │
-        ▼
-Text Chunking
-        │
-        ▼
-Embeddings Generation
-(HuggingFace)
-        │
-        ▼
-FAISS Vector Store
-        │
-        ▼
-User Question
-        │
-        ▼
-Relevant Chunks Retrieval
-        │
-        ▼
-Gemini AI
-        │
-        ▼
-Answer Generation
-🛠️ Technologies Used
-Frontend
-Streamlit
-Backend
-Python
-AI & Machine Learning
-Google Gemini AI
-Hugging Face Embeddings
-Sentence Transformers
-Vector Database
-FAISS (Facebook AI Similarity Search)
-Libraries
-LangChain
-PyPDF2
-Python Dotenv
-📂 Project Structure
-PDF-Chatbot/
-│
-├── main.py
-├── htmlTemplates.py
-├── .env
-├── requirements.txt
-├── README.md
-│
-└── assets/
-⚙️ Installation
-Clone Repository
+⚙️ Setup
+bash
 git clone https://github.com/yourusername/pdf-chatbot.git
-
 cd pdf-chatbot
-Create Virtual Environment
 python -m venv venv
-Activate Virtual Environment
-Windows
-venv\Scripts\activate
-Linux / Mac
-source venv/bin/activate
-Install Dependencies
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
 pip install -r requirements.txt
-🔑 Environment Variables
+Add .env:
 
-Create a .env file in the root directory:
-
+Code
 GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
-
-Get your API key from Google AI Studio.
-
-▶️ Running the Application
+▶️ Run
+bash
 streamlit run main.py
+👉 App runs at: http://localhost:8501
 
-Application will launch at:
+📖 Usage
+1).Upload PDFs
+2).Click Process
+3).Ask questions
 
-http://localhost:8501
-📖 How to Use
-Step 1
+Get contextual answers
 
-Upload one or more PDF files.
+🔮 Future
+1).DOCX/TXT support
+2).Citations & source highlighting
+3).Cloud deployment
+4).Voice & OCR
 
-Step 2
-
-Click the Process button.
-
-Step 3
-
-Wait for embeddings and vector database creation.
-
-Step 4
-
-Ask questions related to the uploaded documents.
-
-Step 5
-
-Receive AI-generated answers with contextual understanding.
-
-🧠 AI Concepts Used
-Retrieval-Augmented Generation (RAG)
-
-The project uses RAG architecture to improve answer quality by retrieving relevant document chunks before generating responses.
-
-Vector Embeddings
-
-Text chunks are converted into numerical vectors using Hugging Face Embeddings.
-
-Semantic Search
-
-FAISS performs similarity searches to find the most relevant content for each query.
-
-Conversational Memory
-
-Maintains conversation history for context-aware interactions.
-
-📸 Sample Workflow
-Upload PDFs
-     ↓
-Process Documents
-     ↓
-Create Embeddings
-     ↓
-Store in FAISS
-     ↓
-Ask Questions
-     ↓
-Retrieve Context
-     ↓
-Generate Answer using Gemini
-🔮 Future Enhancements
-Support for DOCX and TXT files
-Citation-based answers
-Multi-user authentication
-Cloud deployment (AWS/Azure/GCP)
-Voice-based interaction
-OCR support for scanned PDFs
-Chat history export
-Source highlighting inside PDFs
-🎯 Learning Outcomes
-
-Through this project, I gained hands-on experience with:
-
-Retrieval-Augmented Generation (RAG)
-LangChain Framework
-Vector Databases
-Embedding Models
-Large Language Models
-Prompt Engineering
-Streamlit Application Development
-AI-powered Search Systems
 👨‍💻 Author
-
-Madhav Sharma
-
-B.Tech Computer Science Student
-
-Passionate about Artificial Intelligence, Machine Learning, Data Structures & Algorithms, and Full-Stack Development.
+Madhav Sharma  
+B.Tech CSE | Passionate about AI, ML, DSA & Full-Stack Development
