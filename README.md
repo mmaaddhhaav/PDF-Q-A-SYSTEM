@@ -21,7 +21,7 @@ Libraries: LangChain, PyPDF2, dotenv
 
 ⚙️ Setup
 bash
-git clone https://github.com/yourusername/pdf-chatbot.git
+git clone https://github.com/mmaadhhaav/pdf-chatbot.git
 cd pdf-chatbot
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
